@@ -1,0 +1,211 @@
+<div>
+
+    <div class="container">
+  
+      <h1>Player Registration</h1>
+  
+  
+  
+      <form>
+  
+        <div class="form-group">
+  
+          <label for="name">Player Name</label>&nbsp;
+  
+  
+  
+          <input type="text" name="name" class="form-control" ngModel />
+  
+          &nbsp;&nbsp;&nbsp;
+  
+          <label for="playerDetails">Team</label>&nbsp;
+  
+  
+  
+          <input type="text" name="playerDetails" class="form-control" ngModel />
+  
+          &nbsp;&nbsp;&nbsp;
+  
+          <label for="playerDetails">Country</label>&nbsp;
+  
+  
+  
+          <input type="text" name="playerDetails" class="form-control" ngModel />
+  
+          &nbsp;&nbsp;&nbsp;&nbsp;
+  
+          <button class="btn btn-primary" type="submit">Create Player</button>
+  
+        </div>
+  
+  
+  
+        <br /><br />
+  
+  
+  
+        <div class="form-group">
+  
+          <table style="margin-left: 250px;">
+  
+            <thead>
+  
+              <th>PLAYER NAME</th>
+  
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+              <th>PLAYER DETAILS</th>
+  
+            </thead>
+  
+            <tbody>
+  
+              <tr *ngFor="let player of players">
+  
+                <td>{{ player.name }}</td>
+  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+                <td>{{ player.team }}, {{ player.country }}</td>
+  
+                &nbsp;&nbsp;&nbsp;
+  
+                <button
+  
+                  class="btn btn-primary"
+  
+                  type="submit"
+  
+                  style="background-color: rgb(139, 139, 201);"
+  
+                >
+  
+                  Edit</button
+  
+                >&nbsp;&nbsp;&nbsp;
+  
+                <td>
+  
+                  <button
+  
+                    class="btn btn-primary"
+  
+                    type="submit"
+  
+                    style="background-color: rgb(230, 113, 113);"
+  
+                  >
+  
+                    Delete
+  
+                  </button>
+  
+                </td>
+  
+              </tr>
+  
+            </tbody>
+  
+          </table>
+  
+        </div>
+  
+  
+  
+        <br /><br />
+  
+  
+  
+        <div class="form-group">
+  
+          <label for="name">Player Name</label>&nbsp;
+  
+  
+  
+          <input type="text" name="name" class="form-control" ngModel />
+  
+          &nbsp;&nbsp;&nbsp;
+  
+          <label for="playerDetails">Team</label>&nbsp;
+  
+  
+  
+          <input type="text" name="playerDetails" class="form-control" ngModel />
+  
+          &nbsp;&nbsp;&nbsp;
+  
+          <label for="playerDetails">Country</label>&nbsp;
+  
+  
+  
+          <input type="text" name="playerDetails" class="form-control" ngModel />
+  
+          &nbsp;&nbsp;&nbsp;&nbsp;
+  
+          <button class="btn btn-primary" type="submit">Get Player</button>
+  
+          <br /><br />
+  
+          <table style="margin-left: 250px;">
+  
+            <tbody>
+  
+              <tr>
+  
+                <td>
+  
+                  Sachin
+  
+                  Tendulkar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+                  Mumbai Indians, India
+  
+                </td>
+  
+              </tr>
+  
+            </tbody>
+  
+          </table>
+  
+        </div>
+  
+        <br /><br /><br />
+  
+        <div class="form-group">
+  
+          <label for="name">Player Name</label>&nbsp;
+  
+  
+  
+          <input type="text" name="name" class="form-control" ngModel />
+  
+          &nbsp;&nbsp;&nbsp;
+  
+          <label for="playerDetails">Team</label>&nbsp;
+  
+  
+  
+          <input type="text" name="playerDetails" class="form-control" ngModel />
+  
+          &nbsp;&nbsp;&nbsp;
+  
+          <label for="playerDetails">Country</label>&nbsp;
+  
+  
+  
+          <input type="text" name="playerDetails" class="form-control" ngModel />
+  
+          &nbsp;&nbsp;&nbsp;&nbsp;
+  
+          <button class="btn btn-primary" type="submit">Update Player</button>
+  
+        </div>
+  
+      </form>
+  
+    </div>
+  
+  </div>
+  
+  
